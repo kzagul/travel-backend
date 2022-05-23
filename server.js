@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser"); 
 const cors = require("cors");
-const database = require('./app/DBconnection')
+
 
 const app = express();
 
@@ -27,13 +27,13 @@ db.sequelize.sync();
 
 
 // routes
-const TypeOfVisiting = require('./app/routes/typeofvisiting.routes.js')
-const TypeOfExcursion = require('./app/routes/typeofexcursion.routes.js')
-const Excursion = require('./app/routes/excursion.routes')
+// const TypeOfVisiting = require('./app/routes/typeofvisiting.routes.js')
+// const TypeOfExcursion = require('./app/routes/typeofexcursion.routes.js')
+// const Excursion = require('./app/routes/excursion.routes')
 
-app.use('/api', TypeOfVisiting)
-app.use('/api', TypeOfExcursion)
-app.use('/api', Excursion)
+// app.use('/api', TypeOfVisiting)
+// app.use('/api', TypeOfExcursion)
+// app.use('/api', Excursion)
 
 
 
