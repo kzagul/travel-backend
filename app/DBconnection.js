@@ -14,7 +14,6 @@ const pool = new Pool({
   }
 })
 
-
 module.exports = {
     async query(text, params){
         const start = Date.now()

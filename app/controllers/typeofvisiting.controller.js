@@ -1,4 +1,4 @@
-const db = require('../DBConnection.js')
+const db = require('../DBConnection')
 
 //APIs
 class TypeOfVisitingController {
