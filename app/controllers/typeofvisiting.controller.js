@@ -1,5 +1,5 @@
-// const db = require('../DBConnection')
-import db from '../DBConnection'
+const db = require('../DBConnection')
+
 
 //APIs
 class TypeOfVisitingController {
