@@ -31,16 +31,17 @@ db.sequelize.sync();
 // const TypeOfExcursion = require('./app/routes/typeofexcursion.routes.js')
 // const Excursion = require('./app/routes/excursion.routes')
 
+//url links
+app.use(cors())
+app.use(express.json())
+
+
 // app.use('/api', TypeOfVisiting)
 // app.use('/api', TypeOfExcursion)
 // app.use('/api', Excursion)
 
 
-
-//url links
-app.use(cors())
-app.use(express.json())
-
+require('./app/routes/typeofvisiting.routes.js')(app);
 
 
 
